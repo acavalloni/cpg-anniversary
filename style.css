@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'trade_gothic';
+    src: url('font/tradegothicltpro20-webfont-webfont.eot');
+    src: url('font/tradegothicltpro20-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/tradegothicltpro20-webfont-webfont.woff') format('woff'),
+         url('font/tradegothicltpro20-webfont-webfont.ttf') format('truetype'),
+         url('font/tradegothicltpro20-webfont-webfont.svg#trade_gothic_lt_proBdCnno20') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	font-family: 'trade_gothic';
+	font-size : 1.3em;
+	margin :0;
+	padding:0;
+	list-style:none;
+}
+
+html{
+	background-color:#B92B41;
+}
+
+body{
+	background-color:#B92B41;
+	/*background-image:url(images/interro.gif);*/
+	background-attachment: fixed;
+}
+
+#header{
+	margin: 0 auto;
+	width:80%;
+	text-align:center;
+	padding-top:1em;
+	padding-bottom:1em;
+	background-color:#000;
+}
+
+h2{
+	font-size:1.8em;
+	color:#fff;
+}
+
+#content{
+	margin: 0 auto;
+	width:80%;
+	margin:10%;
+	margin-top:5%;
+	text-align:center;
+	background-color:#fff;
+}
+
+#footer{
+	margin: 0 auto;
+	width:80%;
+	text-align:center;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	background-color:#000;
+}
+
+h4{
+	font-size:1.2em;
+	color:#fff;
+}
+
+li{
+	margin-top:0.1em;
+	margin-bottom:0.1em;
+	font-size : 1.6em;
+}
+
+.question{
+	font-size : 1.3em;
+	padding:0.5em;
+}
+
+.haut{
+	padding-top:0.5em;
+}
+
+.winner{
+	color:green;
+	padding:0.5em;
+}
+
+.loser{
+	color:red;
+	padding:0.5em;
+}
+
+#content img{
+	width:85%;
+	display:block;
+	margin-top:1em;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#go{
+	margin: 0 auto;
+	width:100%;
+	padding-top:20%;
+	padding-bottom:35%;
+	height:4em;
+	text-align:center;
+	background-color:#000;	
+}
+
+#go a{
+	text-decoration:none;
+	color:#ffc62c;
+	font-size : 5em;
+}
+
+input[type="submit"]{
+	margin-top:1em;
+	margin-bottom:1em;
+	padding:0.5em;
+}
+
+input[type="radio"]:not(:checked),input[type="radio"]:checked{
+	display:none;
+}
+
+input[type="radio"]+label
+{	padding-top:0.4em;
+	padding-bottom:0.4em;
+	padding-left:0.1em;
+	padding-right:0.1em;
+	display:block;
+	margin:0px;/* c'est plus aéré avec une marge ! 2px*/
+}
+input[type="radio"]+label
+{
+	background-color:#ccc;
+}
+
+input[type="radio"]+label:hover/*Bouton hover*/
+{
+	background-color:#ccc;
+}
+input[type="radio"]:checked+label/*Bouton coché*/
+{
+	background-color:#ffc62c;
+}
+input[type="radio"]:disabled+label/*Bouton désactivé*/
+{
+	background-color:#ccc;
+}

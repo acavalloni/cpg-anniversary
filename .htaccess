@@ -1,0 +1,12 @@
+SetEnv PHP_VER 5_3
+SetEnv MAGIC_QUOTES 0
+SetEnv SESSION_USE_TRANS_SID 0
+
+ErrorDocument 404 /erreur
+
+RewriteEngine on
+
+RewriteRule ^question-([0-9]+)$ question.php?question=$1 [L]
+RewriteRule ^reponse-([0-9]+)$ reponse.php?question=$1 [L]
+RewriteRule ^recommencer$ index.php [L]
+RewriteRule ^landing$ landing.php [L]
